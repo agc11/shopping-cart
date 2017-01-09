@@ -70,7 +70,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div id="app">
-                    <room-list></room-list>
+                    <room-list :rooms="{{ $rooms }}"></room-list>
                 </div>
             </div>
         </div>

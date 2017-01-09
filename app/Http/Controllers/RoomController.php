@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Room;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -13,7 +14,9 @@ class RoomController extends Controller
      */
     public function index()
     {
-        return Rooms::all()->get();
+        $rooms = Room::all();
+
+        return view('index', compact('rooms'));
     }
 
     /**
