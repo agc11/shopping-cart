@@ -13,9 +13,15 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import Keen from 'keen-ui';
+// Import vue-material
+import VueMaterial from 'vue-material'
+// import 'vue-material/dist/vue-material.css'
 
-Vue.use(Keen);
+// Enable Vue Material in my application
+Vue.use(VueMaterial);
+
+
+
 
 Vue.component('example', require('./components/Example.vue'));
 Vue.component('room-list', require('./components/Room-list.vue'));
@@ -23,7 +29,6 @@ Vue.component('room', require('./components/Room.vue'));
 
 const app = new Vue({
     el: '#app',
-
     components: {
 
     }
